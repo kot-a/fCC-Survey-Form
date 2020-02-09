@@ -1,0 +1,310 @@
+:root {
+    font-size: 13px;
+    --kolorTla: #F5F6F1;
+    --kolorTekst: #63443F;
+    --kolorLink: #ADD5E4;
+    --kolorDetal1: #4CA4C4;
+    --kolorDetal2: #BCF4F5;
+    --kolorDetal3: #BDB7BC;
+    --kolorDetal4: #B8CED6;
+    --font: "PT Sans";
+}
+
+body {
+    font-family: var(--font);
+    font-weight: 400;
+    color: var(--kolorTekst);
+    background-color: var(--kolorTla);
+}
+
+h2 {
+    margin-bottom: 0px;
+    padding-bottom: 0.5em;
+    border-top: 1px solid var(--kolorLink)
+}
+
+a {
+    font-weight: 700;
+    color: var(--kolorDetal1);
+    transition: background-color 0.5s;
+    background-color: none;
+}
+
+a:hover {
+    transition: background-color 0.5s;
+    background-color: var(--kolorTla);
+}
+
+#container {
+    display: flex;
+    flex-direction: column;
+    max-width: 700px;
+    margin: auto;
+    margin-bottom: 5px;
+    background-color: white;
+    padding: 45px;
+    padding-bottom: 10px;
+    border: 1px solid var(--kolorLink);
+    border-bottom: 10px solid var(--kolorLink);
+    box-shadow: 0px 1px 25px var(--kolorDetal4),
+                0px -1px 25px var(--kolorDetal4);
+}
+
+#image {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    justify-content: flex-end;
+    margin: -45px;
+    margin-bottom: 0px;
+    height: 350px;
+    background-image: url("E:/bede_programiste/fCC_survey_form/images/Nowy folder/motyle-do-zamowienia2a.jpg");
+    background-size: cover;
+    background-position: center;
+    border-bottom: 10px solid var(--kolorLink);
+}
+
+#divLogo {
+    margin: 0px 2.5em .5em 0px;
+    display: flex;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    background-color: var(--kolorLink);
+}
+
+#logo {
+    height: 75%;
+    margin: auto;
+}
+
+input, select {
+    border: 1px solid var(--kolorDetal3);
+    height: 1.8em;
+    padding-left: 0.3em;
+    border-radius: 3px;
+    font-family: var(--font);
+}
+
+input[name="account"] {
+    width: 100%;
+    margin-top: 0.5em;
+    margin-bottom: 1em;
+}
+
+h1 {
+    text-align: center;
+    font-family: "Cookie";
+    font-size: 4em;;
+}
+label {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+
+#kolumny {
+    display: flex;
+    justify-content: space-between;
+}
+
+#zestawy{
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    justify-content: space-between;
+}
+
+.opis {
+    margin: 0px;
+    padding-bottom: 0.3em;
+    padding-top: 0.3em;
+}
+
+#wielkoscZestawu {
+    display: flex;
+    flex-direction: row;
+    margin-right: 25px;
+    justify-content: space-between;
+}
+
+#ileZestawow {
+    width: 50%;
+}
+
+input[name="number"] {
+    width: 100%;
+    margin-top: 0.5em;
+    margin-bottom: 1em;
+}
+
+select {
+    width: 100%;
+    height: 1.8em;
+    margin-bottom: 1em;
+}
+
+label p {
+    text-transform: uppercase;
+    font-size: 1em;
+    margin-bottom: 0px;
+    padding-bottom: 0.2em;
+}
+
+.wielkoscOpcja, .wielkoscOpcja label, .divNiezbedne, .divNiezbedne label {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    margin-top: 5px;
+}
+
+.opcjaZestawu {
+    display: flex;
+    flex-direction: column;
+}
+
+#idNiezbedne {
+    display: flex;
+    flex-direction: column;
+}
+.trojkat {
+    margin-left: 5px;
+    width: 0; 
+    height: 0; 
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-bottom: 5px solid var(--kolorLink);
+}
+
+#idNiezbedne p, #wielkoscZestawu .ileMotyli {
+    padding: 0.5em;
+    font-size: 0.8em;
+    margin-top: 0px;
+    border: 1px dotted var(--kolorLink);
+    background-color: var(--kolorTla);
+    justify-self: center;
+}
+
+.spanDoWyboru {
+    font-weight: 700;
+}
+
+input[type="checkbox"] {
+    display:none;
+}
+
+.czekbox{
+	width: 13px;
+    height: 13px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background: var(--kolorTla);
+	border: 1px solid var(--kolorDetal1);
+	text-align: center;
+    line-height: 12px;
+    margin-bottom: 5px;
+    margin-right: 8px;
+    margin-left: 3px;	
+	border-radius: 25%;
+	cursor:pointer;	
+}
+
+label i{
+    font-size: 1.1em;
+    opacity:0;
+    margin-right: 3px;
+}
+
+label:hover .czekbox {
+    background: var(--kolorLink);
+}
+
+input:checked + label i {
+    opacity:1;
+}
+
+input:checked + label .czekbox {
+    background: var(--kolorLink);
+}
+
+input[type="radio"] {
+    display:none;
+}
+
+.radiobuton{
+	width: 13px;
+    height: 13px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background: var(--kolorTla);
+	border: 1px solid var(--kolorDetal1);
+	text-align: center;
+    line-height: 12px;
+    margin-bottom: 5px;
+    margin-right: 8px;
+    margin-left: 3px;	
+	border-radius: 50%;
+	cursor:pointer;	
+}
+
+label i{
+    font-size: 0.8em;
+    opacity:0;
+    margin-right: 3px;
+    padding-left: 1px;
+}
+label:hover .radiobuton {
+    background: var(--kolorLink);
+}
+
+input:checked + label i {
+    opacity:1;
+}
+
+input:checked + label .radiobuton {
+    background: var(--kolorLink);
+}
+
+#powiekszZamowienie {
+    display: flex;
+    flex-direction: column;
+}
+
+button {
+    margin-top: 5px;
+    width: 100%;
+    border: 1px solid var(--kolorDetal3);
+    height: 2.5em;
+    border-radius: 3px;
+    font-family: var(--font);
+    transition: background-color 0.5s;
+    background-color: var(--kolorLink);
+}
+
+textarea {
+    width: 100%;
+    height: 10em;
+}
+
+button:hover {
+    transition: background-color 0.5s;
+    background-color: var(--kolorTla);
+}
+
+footer {
+    margin-top: 30px;
+    text-align: center;
+    font-size: 0.8em;
+}
+
+@media only screen and (max-width: 700px) {
+    #wielkoscZestawu {
+        display: flex;
+        flex-direction: column;
+        margin-right: 25px;
+        justify-content: start;
+    }
+
+}
