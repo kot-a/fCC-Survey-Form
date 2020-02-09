@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="E:\bede_programiste\fCC_survey_form\code\survey_page.css">
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,400i,700|Cookie&display=swap&subset=latin-ext" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/23e14adbeb.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+    <title>Butterfly - Survey Form</title>
+</head>
+<body>
+    <div id="container">
+        <div id="image">
+            <div id="divLogo"><img id="logo" src="E:\bede_programiste\fCC_survey_form\images\hmo logo.png"></div>
+        </div>
+        <div>
+            <h1 id="title">Hodowla Motyli Ozdobnych</h1>
+            <p id="description">Złóż zamówienie na swój pierwszy <span class="motylki">Zestaw Hodowlany</span> i już wkrótce ciesz się niesamowicie kolorową ozdobą w mieszkaniu! Hoduj je w specjalnie dostosowanym akwarium lub pozwól im latać swobodnie, by czerpać jeszcze większą przyjemność z tej niecodziennej, egzotycznej ozdoby!</p>
+            <p id="landing_page">Szczegółowe instrukcje odnośnie do <span class="motylki">Hodowli Motyli Ozdobnych</span> na <a href="#" target="_blank" id="landingPage">naszej stronie głównej</a>.</p>
+        </div>
+        <div>
+            <form id="survey-form">
+                <div>
+                    <h2>Utwórz konto (<a href="#" id="login">zaloguj się</a>, jeżeli już masz konto):</h2>
+                    <div>
+                        <label for="name" id="name-label">Login:</label>
+                        <input type="text" name="account" id="name" placeholder="np. Jan Nowak" required>
+                    </div>
+                    <div>
+                        <label for="email" id="email-label">Adres e-mail:</label>
+                        <input type="email" name="account" id="email" placeholder="np. jannowak007@gmail.com" required>
+                    </div>
+                    <div>
+                        <label for="password">Hasło:</label>
+                        <input type="password" name="account" id="password" minlength="8" placeholder="minimum 8 znaków" required>
+                    </div>
+                </div>
+                <div>
+                    <h2>Skomponuj swój Zestaw Motyli:</h2>
+                    <div>
+                        <p class="opis">Wybierz kolor Zestawu:</p>
+                        <select name="Zestaw" id="dropdown">
+                            <option id="opcjaZero" value=""> • Wybierz • </option>
+                            <option id="opcjaNiebieska" value="niebieski"> })i({ • Niebieskie Skrzydełka</option>
+                            <option id="opcjaCzerwona" value="czerwony"> })i({ • Czerwone Skrzydełka</option>
+                            <option id="opcjaCiemna" value="pomaranczowy"> })i({ • Ciemne Skrzydełka</option>
+                            <option id="opcjaMix" value="pomaranczowy"> })i({ • Wielokolorowe Skrzydełka</option>
+                        </select>
+                    </div>
+                    <div id="kolumny">
+                        <div id="zestawy">
+                            <div><p class="opis">Wielkość Zestawu:</p></div>
+                            <div id="wielkoscZestawu">
+                                <div class="opcjaZestawu">
+                                    <div class="wielkoscOpcja">
+                                        <input type="radio" id="duzy" name="wielkosc" value="duzy">
+                                        <label for="duzy"><div class="radiobuton"><i class="far fa-check-circle"></i>
+                                        </div>Duży</label>
+                                    </div>
+                                    <div class="trojkat"></div>
+                                    <div class="ileMotyli">12 motyli</div>
+                                </div>
+                                <div class="opcjaZestawu">
+                                    <div class="wielkoscOpcja">
+                                        <input type="radio" id="sredni" name="wielkosc" value="sredni">
+                                        <label for="sredni"><div class="radiobuton"><i class="far fa-check-circle"></i>
+                                        </div>Średni</label>
+                                    </div>
+                                    <div class="trojkat"></div>
+                                    <div class="ileMotyli">8 motyli</div>
+                                </div>
+                                <div class="opcjaZestawu">
+                                    <div class="wielkoscOpcja">
+                                        <input type="radio" id="maly" name="wielkosc" value="maly">
+                                        <label for="maly"><div class="radiobuton"><i class="far fa-check-circle"></i>
+                                        </div>Mały</label>
+                                    </div>
+                                    <div class="trojkat"></div>
+                                    <div class="ileMotyli">4 motyle</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="ileZestawow">
+                            <label for="liczba" id="number-label">Ilość Zestawów: </label>
+                            <input type="number" name="number" min="1" max="10" id="number" placeholder="od 1 do 10"
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <h2>Rzeczy niezbędne do Hodowli Motyli Ozdobnych:</h2>
+                    <div id="idNiezbedne">
+                        <div class="divNiezbedne">
+                            <input type="checkbox" id="akwarium" name="more" value="akwarium">
+                            <label for="akwarium"><div class="czekbox"><i class="fa fa-check"></i></div>Akwarium</label>
+                        </div>
+                        <div class="trojkat"></div>
+                        <p><span class="span_do_wyboru">Do wyboru</span>: czerwony, niebieski lub czarny kolor pokrywy. Akwarium o pojemności 100 litrów. <span class="span_do_wyboru">Uwaga!</span> W przypadku nie poinformowania nas w komentarzu o wybranym kolorze, wysyłamy losowo.</p>
+                        <div class="divNiezbedne">
+                            <input type="checkbox" id="siatka" name="more" value="siatka">
+                            <label for="siatka"><div class="czekbox"><i class="fa fa-check"></i></div>Siatka do łapania motyli</label>
+                        </div>
+                        <div class="trojkat"></div>
+                        <p><span class="spanDoWyboru">Do wyboru</span>: czerwony lub zielony trzonek. <span class="spanDoWyboru">Uwaga!</span> W przypadku nie poinformowania nas w komentarzu o wybranym kolorze, wysyłamy losowo.</p>
+                        <div class="divNiezbedne">
+                            <input type="checkbox" id="miseczka" name="more" value="miseczka">
+                            <label for="miseczka"><div class="czekbox"><i class="fa fa-check"></i></div>Kultowa miseczka na pożywną mieszankę</label>
+                        </div>
+                        <div class="trojkat"></div>
+                        <p><span class="spanDoWyboru">Do wyboru</span>: niebieski lub zielony wzór motylka. <span class="spanDoWyboru">Uwaga!</span> W przypadku nie poinformowania nas w komentarzu o wybranym kolorze, wysyłamy losowo.</p>
+                    </div>
+                    <div>
+                        <h2>Uwagi i komentarze do Twojego zamówienia:</h2>
+                        <textarea placeholder="Np. kolor pokrywy akwarium."></textarea>
+                    </div>
+                </div>
+                <button id="submit">Potwierdź i przejdź dalej do adresu wysyłki <i class="fas fa-sign-in-alt"></i></button>
+            </form>
+        </div>
+    </div>
+    <footer>
+       <div>@ <strong>kot_a</strong> 2020 • photos by <a href="https://www.pexels.com/pl-pl/zdjecie/dekoracja-dekoracja-wnetrz-dom-kaktus-1005058/" target="_blank">Designecologist</a>, <a href="https://www.pexels.com/pl-pl/zdjecie/makro-motyl-owad-111774/" target="_blank">Ivan Cujic</a>, <a href="https://www.pexels.com/pl-pl/zdjecie/flora-kwiat-makro-motyl-107764/" target="_blank">Christopher Gawel</a>, <a href="https://www.pexels.com/pl-pl/zdjecie/makro-motyl-natura-owad-71107/" target="_blank">Pixabay</a> • photo manipulation by <strong>kot_a</strong></div>
+    </footer>
+</body>
+</html>
